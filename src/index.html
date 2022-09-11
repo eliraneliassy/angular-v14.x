@@ -6,8 +6,18 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://picsum.photos">
 </head>
 <body>
   <app-root></app-root>
+  <my-btn id="btn"></my-btn>
 </body>
+
+<script>
+  const btn = document.getElementById('btn');
+
+  btn.text = 'Eliran';
+
+  btn.addEventListener('clicked', () => console.log('clicked'));
+</script>
 </html>
